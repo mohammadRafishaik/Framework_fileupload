@@ -19,10 +19,10 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 /* ######################################################################################################
  * Class Name: WebLib
  * Description: Contains the methods which are generic to all web page applications
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Feb-2016
- * ######################################################################################################
+ * Author: Rafi
+ * Organization: NIC
+ * Date Created: 17-sep-2017
+ * * ######################################################################################################
  */
 public class WebLibrary extends FrameworkLibrary
 {
@@ -31,9 +31,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To clear contents and enter text in a WebElement
  * Input Parameters: Element Xpath , Value
  * Output: True/False
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
 	public static Boolean SetText(String ObjectXpath,String Value)
@@ -65,9 +65,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To perform Click operation on a WebElement
  * Input Parameters: Element Xpath
  * Output: True/False
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
     public static Boolean ClickElement(String ObjectXpath)
@@ -91,9 +91,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To clear contents , enter text in WebElement and then click on Escape
  * Input Parameters: Element Xpath
  * Output: True/False
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
     public static Boolean SetTextAndEscape(String ObjectXpath,String Value)
@@ -127,9 +127,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To verify the existence of WebElement
  * Input Parameters: Element Xpath
  * Output: True/False
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
 	public static Boolean Exist(String ObjectXpath)
@@ -153,9 +153,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To verify the isDisplayed of WebElement
  * Input Parameters: Element Xpath
  * Output: True/False
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
 	public static Boolean isElementDisplayed(String ObjectXpath)
@@ -179,9 +179,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To verify the isDisplayed of WebElement
  * Input Parameters: Element Xpath
  * Output: True/False
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
 	public static Boolean isElementEnabled(String ObjectXpath)
@@ -205,9 +205,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To verify the isDisplayed of WebElement
  * Input Parameters: Element Xpath
  * Output: True/False
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
 	public static Boolean isElementSelected(String ObjectXpath)
@@ -231,9 +231,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To select option from dropdown based on visible text
  * Input Parameters: Element Xpath , Text of an option
  * Output: True/False
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
 	public static Boolean SelectOPtionByText(String ObjectXpath,String Option)
@@ -263,9 +263,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To select option from dropdown based on value
  * Input Parameters: Element Xpath , value of an option
  * Output: True/False
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
 	public static Boolean SelectOPtionByValue(String ObjectXpath,String Option)
@@ -295,9 +295,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To Launch a selected browser
  * Input Parameters: Browser Name
  * Output: WebDriver Instance
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
     public static WebDriver launchBrowser(String BrowserName)
@@ -337,9 +337,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To Open a specified URL
  * Input Parameters: URL
  * Output: True/False
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
     public static Boolean OpenUrl(String URL)
@@ -367,9 +367,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To set implicit wait for a driver instance
  * Input Parameters: TimeInSec
  * Output: True/False
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
 	public static Boolean SetImplicitWait(int TimeInSec)
@@ -390,9 +390,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To switch a driver instance of a driver to a new window based on the title
  * Input Parameters: Partial Title value
  * Output: True/False
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
 	public static boolean SwitchToWindowByTitle(String Text)
@@ -424,9 +424,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To switch a driver instance of a driver to a new window based on the URL
  * Input Parameters: Partial URL value
  * Output: True/False
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
 	public static boolean SwitchToWindowByURL(String Text)
@@ -458,9 +458,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To switch a driver instance of a driver to a new window based on the Handle
  * Input Parameters: Window Handle
  * Output: True/False
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
 	public static boolean SwitchToWindowByHandle(String HandleText)
@@ -483,9 +483,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To Make the execution halt for the specified time
  * Input Parameters: TimeInSeconds
  * Output: Void
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
     public static void wait(double d)
@@ -504,9 +504,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To Make the execution halt for the specified time
  * Input Parameters: TimeInSeconds
  * Output: Void
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
         public static void wait(int d)
@@ -525,9 +525,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To Highlight a WebElement Based on the Java Script Executor
  * Input Parameters: Xpath of a WebElement
  * Output: Void
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
     public static void Highlight(String ObjectXpath)
@@ -554,9 +554,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To Highlight a WebElement Based on the Java Script Executor
  * Input Parameters: Xpath of a WebElement
  * Output: Void
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
         public static void gHighlight(String ObjectXpath)
@@ -583,9 +583,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To Enter Text in a WebElement Based on the Java Script Executor
  * Input Parameters: Xpath of a WebElement, Value
  * Output: True/False
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
 	public static Boolean JsSetText(String ObjectXpath,String Value)
@@ -617,9 +617,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To generate a string based on date and time stamp
  * Input Parameters: None
  * Output: Current Date and Time Stamp as String
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
 	public static String getTimeStamp() 
@@ -636,9 +636,9 @@ public class WebLibrary extends FrameworkLibrary
  * Description: To Click on a WebElement Based on the Java Script Executor
  * Input Parameters: Xpath of WebElement
  * Output: True/False
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Mar-2016
+ * Author: Rafi
+ * Organization: NIC_Rafi
+ * Date Created: 17-09-2017
  * ######################################################################################################
  */
 	public static Boolean JsClickElement(String ObjectXpath)

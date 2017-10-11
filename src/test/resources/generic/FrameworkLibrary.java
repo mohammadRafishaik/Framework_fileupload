@@ -33,8 +33,8 @@ public class FrameworkLibrary extends Dlib
 /* ######################################################################################################
  * Class Name: TLogger
  * Description: Class to generate report and add log events to the extent report
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
+ * Author: Rafi
+ * Organization: Nic_Rafi
  * Date Created: 10-Feb-2016
  * ######################################################################################################
  */
@@ -43,8 +43,8 @@ class TLogger extends TestData
 /* ######################################################################################################
  * Method Name: LogEvent
  * Description: Method to Log Events at run time to the log file
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
+ * Author: Rafi
+ * Organization: Nic_Rafi
  * Date Created: 10-Aug-2016
  * ######################################################################################################
  */
@@ -90,8 +90,8 @@ class TLogger extends TestData
 /* ######################################################################################################
  * Method Name: LogEvent
  * Description: Method to Log Events at run time along with the screenshot to the log file
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
+ * Author: Rafi
+ * Organization: Nic_Rafi
  * Date Created: 10-Aug-2016
  * ######################################################################################################
  */
@@ -124,8 +124,8 @@ class TLogger extends TestData
 /* ######################################################################################################
  * Method Name: getscreenshot
  * Description: Method to Capture Screenshot of the current driver instance
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
+ * Author: Rafi
+ * Organization: Nic_Rafi
  * Date Created: 10-Aug-2016
  * ######################################################################################################
  */
@@ -155,8 +155,8 @@ class TLogger extends TestData
 /* ######################################################################################################
  * Method Name: getscreenshot
  * Description: Method to Capture Screenshot of the current driver instance
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
+ * Author: Rafi
+ * Organization: Nic_Rafi
  * Date Created: 10-Aug-2016
  * ######################################################################################################
  */
@@ -179,8 +179,8 @@ class TLogger extends TestData
 /* ######################################################################################################
  * Class Name: TestData
  * Description: Class to retreive and store test data into excel files 
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
+ * Author: Rafi
+ * Organization: Nic_Rafi
  * Date Created: 10-Feb-2016
  * ######################################################################################################
  */
@@ -189,8 +189,8 @@ class TestData extends GlobalVariables
 /* ######################################################################################################
  * Method Name: loadData
  * Description: Method to load testdata from excel and assign it to script variables
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
+ * Author: Rafi
+ * Organization: Nic_Rafi
  * Date Created: 10-Aug-2016
  * ######################################################################################################
  */
@@ -257,8 +257,8 @@ class TestData extends GlobalVariables
 /* ######################################################################################################
  * Method Name: exportData
  * Description: Method to assign values of script variables to excel Sheet Testdata
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
+ * Author: Rafi
+ * Organization: Nic_Rafi
  * Date Created: 10-Aug-2016
  * ######################################################################################################
  */
@@ -327,8 +327,8 @@ class TestData extends GlobalVariables
 /* ######################################################################################################
  * Method Name: getData
  * Description: Method to get value of script variable at run time
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
+ * Author: Rafi
+ * Organization: Nic_Rafi
  * Date Created: 10-Aug-2016
  * ######################################################################################################
  */
@@ -348,8 +348,8 @@ class TestData extends GlobalVariables
 /* ######################################################################################################
  * Method Name: putData
  * Description: Method to get value of script variable at run time
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
+ * Author: Rafi
+ * Organization: Nic_Rafi
  * Date Created: 10-Aug-2016
  * ######################################################################################################
  */
@@ -367,8 +367,8 @@ class TestData extends GlobalVariables
 /* ######################################################################################################
  * Method Name: clearFields
  * Description: Method to clear all field values of script variable at run time
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
+ * Author: Rafi
+ * Organization: Nic_Rafi
  * Date Created: 10-Aug-2016
  * ######################################################################################################
  */
@@ -413,9 +413,9 @@ class Dlib extends TLogger
 /* ######################################################################################################
  * Method Name: onTestCaseStart
  * Description: Does the setup such as Loading Data,Launching WebDriver instance at the begining of every testcase
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Feb-2016
+ * Author: Rafi
+ * Organization: Nic_Rafi
+ * Date Created: 20-09-2017
  * ######################################################################################################
  */
 	public static void onTestCaseStart()
@@ -432,9 +432,9 @@ class Dlib extends TLogger
 /* ######################################################################################################
  * Method Name: executeTestCase
  * Description: Does the setup such as Loading Data,Launching WebDriver instance at the begining of every testcase
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Feb-2016
+ * Author: Rafi
+ * Organization: Nic_Rafi
+ * Date Created: 20-09-2017
  * ######################################################################################################
  */
 	public static void executeTestCase()
@@ -461,9 +461,9 @@ class Dlib extends TLogger
 /* ######################################################################################################
  * Method Name: getCurrentBrowser
  * Description: gets the current browser specified in the runmanager sheet
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Feb-2016
+ * Author: Rafi
+ * Organization: Nic_Rafi
+ * Date Created: 20-09-2017
  * ######################################################################################################
  */
 	public static String getCurrentBrowser(String currentTestCase) 
@@ -513,9 +513,9 @@ class Dlib extends TLogger
 /* ######################################################################################################
  * Method Name: enableHighlight
  * Description: enable Highlight for each action.
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Feb-2016
+ * Author: Rafi
+ * Organization: Nic_Rafi
+ * Date Created: 20-09-2017
  * ######################################################################################################
  */
 	public static void enableHighlight()
@@ -525,9 +525,9 @@ class Dlib extends TLogger
 /* ######################################################################################################
  * Method Name: disableHighlight
  * Description: disable Highlight for each action.
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Feb-2016
+ * Author: Rafi
+ * Organization: Nic_Rafi
+ * Date Created: 20-09-2017
  * ######################################################################################################
  */
 	public static void disableHighlight()
@@ -537,9 +537,9 @@ class Dlib extends TLogger
 /* ######################################################################################################
  * Method Name: enableTakingScreenshots
  * Description: enable Highlight for each action.
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Feb-2016
+ * Author: Rafi
+ * Organization: Nic_Rafi
+ * Date Created: 20-09-2017
  * ######################################################################################################
  */
 	public static void enableTakingScreenshots()
@@ -551,9 +551,9 @@ class Dlib extends TLogger
 /* ######################################################################################################
  * Method Name: disableTakingScreenshots
  * Description: disable Highlight for each action.
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Feb-2016
+ * Author: Rafi
+ * Organization: Nic_Rafi
+ * Date Created: 20-09-2017
  * ######################################################################################################
  */
 	public static void disableTakingScreenshots()
@@ -565,9 +565,9 @@ class Dlib extends TLogger
 /* ######################################################################################################
  * Method Name: disableTakingScreenshots
  * Description: disable Highlight for each action.
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Feb-2016
+ * Author: Rafi
+ * Organization: Nic_Rafi
+ * Date Created: 20-09-2017
  * ######################################################################################################
  */
 	public static void disableTakingScreenshotsForPassedSteps()
@@ -577,9 +577,9 @@ class Dlib extends TLogger
 /* ######################################################################################################
  * Method Name: disableTakingScreenshots
  * Description: disable Highlight for each action.
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Feb-2016
+ * Author: Rafi
+ * Organization: Nic_Rafi
+ * Date Created: 20-09-2017
  * ######################################################################################################
  */
 	public static void disableTakingScreenshotsForFailedSteps()
@@ -589,9 +589,9 @@ class Dlib extends TLogger
 	/* ######################################################################################################
 	 * Method Name: onTestCaseFinish
 	 * Description: closes driver instance and ends report of logger
-	 * Author: Ankit Reddy
-	 * Organization: Testing Master Technologies
-	 * Date Created: 14-Feb-2016
+	 * Author: Rafi
+	 * Organization: Nic_Rafi
+	 * Date Created: 20-09-2017
 	 * ######################################################################################################
 	 */
 		public static void onTestCaseFinish()
@@ -606,9 +606,9 @@ class Dlib extends TLogger
 /* ######################################################################################################
  * Method Name: onExecutionStart
  * Description: Set up the environment before the execution of the current run
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Feb-2016
+ * Author: Rafi
+ * Organization: Nic_Rafi
+ * Date Created: 20-09-2017
  * ######################################################################################################
  */
 	public static void onExecutionStart() 
@@ -630,9 +630,9 @@ class Dlib extends TLogger
 /* ######################################################################################################
  * Method Name: getTestCases
  * Description: get the selected TestCases List from the RunManager Sheet
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Feb-2016
+ * Author: Rafi
+ * Organization: Nic_Rafi
+ * Date Created: 20-09-2017
  * ######################################################################################################
  */
 	public static String getTestCases()
@@ -674,9 +674,9 @@ class Dlib extends TLogger
 /* ######################################################################################################
  * Method Name: getTestCaseDescription
  * Description: get the description of the current testcase from the RunManager Sheet
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Feb-2016
+ * Author: Rafi
+ * Organization: Nic_Rafi
+ * Date Created: 20-09-2017
  * ######################################################################################################
  */
 	public static String getTestCaseDescription(String TestCaseName)
@@ -725,9 +725,9 @@ class Dlib extends TLogger
 /* ######################################################################################################
  * Method Name: execute
  * Description: Execute the selected TestCases Dynamically using refelection API's
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Feb-2016
+ * Author: Rafi
+ * Organization: Nic_Rafi
+ * Date Created: 20-09-2017
  * ######################################################################################################
  */
 	@SuppressWarnings("rawtypes")
@@ -809,9 +809,9 @@ class Dlib extends TLogger
 /* ######################################################################################################
  * Method Name: createresultsfolder
  * Description: creates results folder based on date and time stamp
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Feb-2016
+ * Author: Rafi
+ * Organization: Nic_Rafi
+ * Date Created: 20-09-2017
  * ######################################################################################################
  */
 	private static String createresultsfolder() 
@@ -828,9 +828,9 @@ class Dlib extends TLogger
 /* ######################################################################################################
  * Method Name: onExecutionFinish
  * Description: Closes Report and Invoke the result summary.html 
- * Author: Ankit Reddy
- * Organization: Testing Master Technologies
- * Date Created: 14-Feb-2016
+ * Author: Rafi
+ * Organization: Nic_Rafi
+ * Date Created: 20-09-2017
  * ######################################################################################################
  */
 	public static void onExecutionFinish() 
