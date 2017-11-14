@@ -3,10 +3,13 @@ package test.resources.generic;
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Collection;
+import java.util.List;
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -86,6 +89,66 @@ public class WebLibrary extends FrameworkLibrary
         updateLogStep(stepStatus);
         return stepStatus;
     }
+    
+    /* ######################################################################################################
+     * Method Name: GetText
+     * Description: To perform Click operation on a WebElement
+     * Input Parameters: Element Xpath
+     * Output: True/False
+     * Author: Rafi
+     * Organization: NIC_Rafi
+     * Date Created: 17-09-2017
+     * ######################################################################################################
+     */// ..............................................................
+    
+ public static Boolean GetText(String ObjectXpath) {
+	 Boolean stepStatus = true;
+	 try
+	 {
+		 if(Highlightelement)
+			 Highlight(ObjectXpath);
+		 driver.findElement(By.xpath(ObjectXpath)).getText();
+	 }
+	 catch (Exception e)
+	 {
+		 stepStatus = false;
+	 }
+	 updateLogStep(stepStatus);
+	 return stepStatus;
+	 }
+ 
+ /* ######################################################################################################
+  * Method Name: GetSize
+  * Description: To perform Click operation on a WebElement
+  * Input Parameters: Element Xpath
+  * Output: True/False
+  * Author: Rafi
+  * Organization: NIC_Rafi
+  * Date Created: 17-09-2017
+  * ######################################################################################################
+  */
+
+ public static Boolean getSize(String ObjectXpath) {
+	 Boolean stepstatus = true;
+	 try
+	 {
+		 if(Highlightelement)
+			 Highlight(ObjectXpath);
+List<WebElement> Links=driver.findElements(By.tagName(ObjectXpath));
+Links.size();
+System.out.println(" Size Count "+Links.size());
+	 }
+catch (Exception e)
+{
+	stepstatus =false;
+}
+updateLogStep(stepstatus);
+return stepstatus;
+	 
+	 
+ }
+ //........................................................................................
+ 
 /* ######################################################################################################
  * Method Name: SetTextAndEscape
  * Description: To clear contents , enter text in WebElement and then click on Escape
@@ -478,6 +541,30 @@ public class WebLibrary extends FrameworkLibrary
     	return stepStatus;
 	}
 	
+	/* ######################################################################################################
+	 * Method Name: Alert Handling
+	 * Description: To switch a driver instance of a driver to a new window based on the Handle
+	 * Input Parameters: Window Handle
+	 * Output: True/False
+	 * Author: Rafi
+	 * Organization: NIC_Rafi
+	 * Date Created: 17-09-2017
+	 * ######################################################################################################*/
+		public static void alerthandling (String handleText){
+			
+			try
+			{
+				driver.switchTo().alert().accept();
+			}
+			catch(Exception e)
+			{
+				System.out.println("error message"+e);
+			}
+//		updateLogStep(stepStatus);
+//		return stepStatus;
+		}
+		
+
 /* ######################################################################################################
  * Method Name: wait
  * Description: To Make the execution halt for the specified time

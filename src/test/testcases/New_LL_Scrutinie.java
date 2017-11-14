@@ -23,7 +23,7 @@ public class New_LL_Scrutinie extends UserLibrary{
 			
 			plog = "able to click on login Button";
 			flog = "Unable to Click  On login Button";
-			ClickElement(".//*[@href='sarathilogin.do']");	
+			ClickElement("html/body/div[1]/div/div[3]/form/nav/div/div/ul/li[3]/a");	
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

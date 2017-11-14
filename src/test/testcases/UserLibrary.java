@@ -40,9 +40,9 @@ public class UserLibrary extends WebLibrary
 //		plog = "Able to eclik on login";
 //		flog = "Unable to click on login";
 //		ClickElement("//input[@id='btnLogin']");
-//		
+		
 //		plog = "Login is successful";
-//		flog = "LOgin is not successful";
+//		flog = "Login is not successful";
 //		status = Exist("//a[@id='welcome']"); 
 		
 		return status;

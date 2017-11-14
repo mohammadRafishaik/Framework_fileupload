@@ -10,136 +10,156 @@ import com.sun.org.apache.xerces.internal.util.SynchronizedSymbolTable;
 import com.thoughtworks.selenium.webdriven.commands.GetAttribute;
 
 public class New_LLSubmission_slotbooking_fee_payment extends UserLibrary{
+int Age=16;
+
 	@Test
 public static void ApplyLLApplication()  {
-	boolean status;
-	/// String age="null"; -----CCondition purpose
-	enableTakingScreenshots();
-	enableHighlight();
-	SetImplicitWait(5);
-	status = Login(getData("URL"),getData("UserName"), getData("Password"));
-	//SwitchToWindowByTitle(ClassPath);
-	plog = "Able to eclik on Apply Online";
-	flog = "Unable to click on Apply Online";
-	ClickElement(".//*[@id='cssmenu']/ul/li[1]/a/span[1]");
-	
-	plog = "Able to eclik on Apply Online under LL TAB";
-	flog = "Unable to click on Apply Online under LL TAB";
-	ClickElement(".//*[@href='newLLDet.do']");
-    wait(3);
-	plog = "Able to eclik on Countinue button";
-	flog = "Unable to click on Countinue Button";
-	ClickElement(".//*[@class='btn top-space']");
-	
-	plog = "Able to eclik on submit button";
-	flog = "Unable to click on Submit Button";
-	ClickElement(".//*[@class='btn top-space']");
+	try {
+		boolean status;
+		/// String age="null"; -----CCondition purpose
+		enableTakingScreenshots();
+		enableHighlight();
+		SetImplicitWait(5);
+		status = Login(getData("URL"),getData("UserName"), getData("Password"));
+		//SwitchToWindowByTitle(ClassPath);
+		plog = "Able to clik on Apply Online";
+		flog = "Unable to click on Apply Online";
+		ClickElement(".//*[@id='cssmenu']/ul/li[1]/a/span[1]");
+		
+		plog = "Able to eclik on Apply Online under LL TAB";
+		flog = "Unable to click on Apply Online under LL TAB";
+		ClickElement(".//*[@href='newLLDet.do']");
+		wait(3);
+		plog = "Able to eclik on Countinue button";
+		flog = "Unable to click on Countinue Button";
+		ClickElement(".//*[@class='btn top-space']");
+		
+		plog = "Able to eclik on submit button";
+		flog = "Unable to click on Submit Button";
+		ClickElement(".//*[@class='btn top-space']");
 /////////////State/////////////////////////////////
-	plog = "Able to click on state DN";
-	flog = "Unable to click on State DW";
-	ClickElement(".//*[@id='licenceFromState']");
-	//wait(200);
-	plog = "Able to click on state DN";
-	flog = "Unable to click on State DW";
-	ClickElement(".//*[@value='GJ']");//(".//*[@value='GJ']");
-	/////////////////////////////RTO////////////////////////////
-	
-	plog = "Able to click on state DN";
-	flog = "Unable to click on State DW";
-	ClickElement(".//*[@id='licenceFromRTO']");
-	
-	////////////////////////RTO vLAUE??????????????????
-	
-	plog = "Able to click on state DN";
-	flog = "Unable to click on State DW";
-	ClickElement(".//*[@value='GJ09']");	  	
-	///Name///////
-	plog = "Able to set Name";
-	flog = "Unable to set Name";
-	SetText(".//*[@id='fname']", getData("FirstName"));
-	
+		plog = "Able to click on state DN";
+		flog = "Unable to click on State DW";
+		ClickElement(".//*[@id='licenceFromState']");
+		//wait(200);
+		plog = "Able to click on state DN";
+		flog = "Unable to click on State DW";
+		ClickElement(".//*[@value='GJ']");//(".//*[@value='GJ']");
+		/////////////////////////////RTO////////////////////////////
+		
+		plog = "Able to click on state DN";
+		flog = "Unable to click on State DW";
+		ClickElement(".//*[@id='licenceFromRTO']");
+		
+		////////////////////////RTO vLAUE??????????????????
+		
+		plog = "Able to click on state DN";
+		flog = "Unable to click on State DW";
+		ClickElement(".//*[@value='GJ09']");	  	
+		///Name///////
+		plog = "Able to set Name";
+		flog = "Unable to set Name";
+		SetText(".//*[@id='fname']", getData("FirstName"));
+		
 ////MIddle Name//
-	plog = "Able to set mName";
-	flog = "Unable to set mName";
-	SetText(".//*[@id='mname']", getData("Mname"));
-	
-	///Lname///
-	plog = "Able to set lName";
-	flog = "Unable to set lName";
-	SetText(".//*[@id='lname']", getData("Lname"));
-	
-	////////Relation Drop Down/////////////
-	plog = "Able to click on Relation DN";
-	flog = "Unable to click on Relation DW";
-	ClickElement(".//*[@id='relationType']");
-	
-	/////Relation Value////
-	plog = "Able to click on Relation DN";
-	flog = "Unable to click on Relation DW";
-	ClickElement(".//*[@value='F']");
+		plog = "Able to set mName";
+		flog = "Unable to set mName";
+		SetText(".//*[@id='mname']", getData("Mname"));
+		
+		///Lname///
+		plog = "Able to set lName";
+		flog = "Unable to set lName";
+		SetText(".//*[@id='lname']", getData("Lname"));
+		
+		////////Relation Drop Down/////////////
+		plog = "Able to click on Relation DN";
+		flog = "Unable to click on Relation DW";
+		ClickElement(".//*[@id='relationType']");
+		
+		/////Relation Value////
+		plog = "Able to click on Relation DN";
+		flog = "Unable to click on Relation DW";
+		ClickElement(".//*[@value='F']");
 
-	
-	////////FFNAME?/////////////
-	plog = "Able to set Name";
-	flog = "Unable to set Name";
-	SetText(".//*[@id='swdfName']", getData("FFName"));
-	
-	///////////FmName///////////////
-	plog = "Able to set Name";
-	flog = "Unable to set Name";
-	SetText(".//*[@id='swdmName']", getData("Fmname"));
-	
-	/////////////flname//////////////////
-	plog = "Able to set Name";
-	flog = "Unable to set Name";
-	SetText(".//*[@id='swdlName']", getData("FLName"));
-	
-	/////////////////Gender////////////
-	
-	plog = "Able to click on Gender";
-	flog = "Unable to click on Gender";
-	ClickElement(".//*[@id='gender1']");
-	
-	//////////////Qulification////////////
-	
-	plog = "Able to click on Gender";
-	flog = "Unable to click on Gender";
-	ClickElement(".//*[@id='eduQual']");
+		
+		////////FFNAME?/////////////
+		plog = "Able to set Name";
+		flog = "Unable to set Name";
+		SetText(".//*[@id='swdfName']", getData("FFName"));
+		
+		///////////FmName///////////////
+		plog = "Able to set Name";
+		flog = "Unable to set Name";
+		SetText(".//*[@id='swdmName']", getData("Fmname"));
+		
+		/////////////flname//////////////////
+		plog = "Able to set Name";
+		flog = "Unable to set Name";
+		SetText(".//*[@id='swdlName']", getData("FLName"));
+		
+		/////////////////Gender////////////
+		
+		plog = "Able to click on Gender";
+		flog = "Unable to click on Gender";
+		ClickElement(".//*[@id='gender1']");
+		
+		//////////////Qulification////////////
+		
+		plog = "Able to click on Gender";
+		flog = "Unable to click on Gender";
+		ClickElement(".//*[@id='eduQual']");
 //////////////////////////Qulification Value/////////////////
-	
-	plog = "Able to click on Gender";
-	flog = "Unable to click on Gender";
-	ClickElement(".//*[@value='8']");
+		
+		plog = "Able to click on Gender";
+		flog = "Unable to click on Gender";
+		ClickElement(".//*[@value='8']");
 
+		
+		////Mobilenumber//////////////
+		plog = "Able to set MobileNumber";
+		flog = "Unable to set Mobile Number";
+		SetText(".//*[@id='mobileNumber']",getData("MobileNO"));
+		
+		//////////////dateOfBirth/////////////
+		
+		plog = "Able to set dateOfBirth";
+		flog = "Unable to set dateOfBirth";
+		SetText(".//*[@id='dateOfBirth']",getData("Dob"));
+		Thread.sleep(4000);
+		ClickElement(".//input[@name='age']");
+		Thread.sleep(4000);
+		String Age="16";
+System.out.println("Age "+Age);
+		///Get Value From Date Field
+		//String value;
+		String value1=driver.findElement(By.xpath(".//*[@id='age']")).getAttribute("value");
+		System.out.println("Value  "+value1);
+if(Age.contentEquals(value1))
+{
 	
-	////Mobilenumber//////////////
-	plog = "Able to set MobileNumber";
-	flog = "Unable to set Mobile Number";
-	SetText(".//*[@id='mobileNumber']",getData("MobileNO"));
+
+		
+		/////Distric///////////
+		plog = "Able to set dist";
+		flog = "Unable to set dist";
+		ClickElement(".//*[@id='presDistrict']");
+		System.out.println("Age is equal to user Required");
+}
+else
+{
+	System.out.println("age is not equal to user required");
+}
+	}	
+	catch (Exception e) {
+		// TODO Auto-generated catch block
+
+		System.out.println("e");
+	}
 	
-	//////////////dateOfBirth/////////////
 	
-	plog = "Able to set dateOfBirth";
-	flog = "Unable to set dateOfBirth";
-	SetText(".//*[@id='dateOfBirth']",getData("Dob"));
 	
-//	ClickElement(".//*[@id='ui-datepicker-div']/table/tbody/tr[1]/td[3]/a");
-//	
-//	plog = "Able to set dateOfBirth";
-//	flog = "Unable to set dateOfBirth";                    Condition purpose
-//	//SetText(".//*[@id='age']",GetAttribute(""));
-//     String str=driver.findElement(By.id("age")).getAttribute("Value");
-//     
-//	System.out.println("placeholderage  " +getAttribute("Value"));       
-//	if(age==getAttribute("Value"))
-//	{
-//		
 	
-	/////Distric///////////
-	plog = "Able to set dist";
-	flog = "Unable to set dist";
-	ClickElement(".//*[@id='presDistrict']");
-//	
+	
 //	////// Distric value////
 //	plog = "Able to set dst value";
 //	flog = "Unable to set Dist value";
@@ -278,7 +298,7 @@ public static void Fee_Payment() {
 	flog = "Unable to open application";
 	status = Login(getData("URL"), getData("UserName"), getData("Password"));
 
-//	OpenUrl("https://s4rnd.nic.in:8443/sarathiservice/sarathiHomePublic.do");
+//	OpenUrl(".dohttps://s4rnd.nic.in:8443/sarathiservice/sarathiHomePublic");
 	//OpenUrl(URL);
 	
 	plog = "Able to click on OnlineApply field";
